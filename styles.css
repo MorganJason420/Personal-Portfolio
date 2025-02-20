@@ -27,7 +27,7 @@ ul{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  margin-left: 360px;
+  margin-left: 180px;
 }
 li{
   float: left;
@@ -62,7 +62,7 @@ li a{
   height: 700px;
 }
 .para1{
-  width: 60%;
+  width: 80%;
   font-weight: 400;
   font-size: 1.1rem;
 }
@@ -74,7 +74,7 @@ li a{
 }
 
 .button1{
-  width: 33%;
+  width: 35%;
   top: 2px;
   position: relative;
   border: 1px solid whitesmoke;
@@ -84,14 +84,13 @@ li a{
   justify-content: center;
 }
 .button-1{
-  width: 100%;
+  width: 90px;
   background-color: transparent;
   font-weight: lighter;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   position: relative;
  bottom: 16px;
- left: 7px;
  justify-content: center;
 }
 .card1-section1{
@@ -216,7 +215,6 @@ strong{
 }
 .bitmoji2{
   position: relative;
-  left: 40px;
   border: 0.3px solid black;
   height: auto;
   border-radius: 20px;
@@ -225,6 +223,7 @@ strong{
   position: relative;
   width: 40%;
   left: 400px;
+  bottom: 25px;
 }
 .card5-header{
   position: relative;
@@ -242,12 +241,16 @@ strong{
   font-weight: 500;
   font-stretch: expanded;
 }
+.card5-body{
+  bottom: 75px;
+
+}
 .card5-body p{
   width: 80%;
+  bottom: 75px;
   font-size: 1.4rem;
   color: gray;
   position: relative;
-  bottom: 75px;
   left: 5px;
 }
 #my-projects{
@@ -255,7 +258,7 @@ strong{
   top: 150px;
 }
 .button5{
- width: 38%;
+ width: 50%;
  background-color: transparent;
  font-weight: lighter;
  font-weight: 400;
@@ -270,6 +273,7 @@ strong{
   position: relative;
   width: 60%;
   min-height: 30px;
+  bottom: 50px;
 }
 .card6-container{
   position: relative;
@@ -316,7 +320,7 @@ strong{
 }
 .ireporter-p2{
   position: absolute;
-  top: 294px;
+  top: 214px;
   left: 50px;
   background-color: black;
   font-size: 1.1rem;
@@ -326,8 +330,8 @@ strong{
 }
 .ireporter-link{
   position: absolute;
-  top: 282px;
-  right: 475px;
+  top: 278px;
+  right: 340px;
   background-color: black;
 }
 .i-reporter{
@@ -373,26 +377,26 @@ strong{
   font-size: 26px;
   font-weight: 400;
   background-color: black;
-  color: #FDC830;
+  color: white;
 }
 .primeride-p2{
   position: relative;
   left: 50px;
   width: 48%;
-  color: white;
+  color: grey;
   font-size: 1.2rem;
-  top: 2px;
+  bottom: 22px;
   background-color: black;
 }
 .primeride-link{
   position: relative;
-  top: 20px;
-  right: 305px;
+  top: 78px;
+  right: 185px;
   background-color: black;
 }
 .letsconnect-img{
   position: relative;
-  left: 650px;
+  left: 570px;
   width: 35%;
   min-height: 360px;
   background: #FF416C;  /* fallback for old browsers */
@@ -413,16 +417,16 @@ strong{
 }
 .letsconnect-p1{
   position: absolute;
-  top: 255px;
+  top: 275px;
   left: 50px;
   font-size: 26px;
   font-weight: 400;
-  color: #FF416C;
+  color: white;
   background-color: black;
 }
 .letsconnect-p2{
   position: relative;
-  top: 8px;
+  top: 28px;
   left: 50px;
   background-color: black;
   font-size: 1.2rem;
@@ -432,8 +436,8 @@ strong{
 }
 .letsconnect-link{
   position: relative;
-  top: 26px;
-  right: 358px;
+  top: 101px;
+  right: 246px;
   background-color: black;
   color: red;
 }
@@ -442,7 +446,7 @@ strong{
   top: 400px;
   display: flex;
   width: 65%;
-  left: 450px;
+  left: 410px;
 }
 .section4-text{
   display: block;
@@ -472,7 +476,7 @@ h5{
 
 }
 .button6{
-  width: 30%;
+  width: 60%;
   top: 2px;
   position: relative;
   padding: 6px 6px 6px 6px;
@@ -508,7 +512,7 @@ footer{
   position: relative;
   width: 25%;
   top: 600px;
-  left: 850px;
+  left: 650px;
 }
 .footerp1-span{
   position: relative;
@@ -535,6 +539,9 @@ footer{
 @media screen and (max-width: 480px) {
   *{
     max-width: 100%;
+  }
+  body, header, footer{
+    overflow-x: hidden;
   }
   #section1{
     position: relative;
@@ -656,7 +663,7 @@ footer{
   .projects-bitmoji{
     position: absolute;
     left: 10px;
-    margin: 0;
+    margin-bottom: 220px;
     width: 80%;
   }
   .card5-container{
@@ -874,4 +881,4 @@ footer{
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
 
- };
+};
