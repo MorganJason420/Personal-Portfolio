@@ -219,13 +219,74 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 30px;
+  gap: 150px;
 }
 
-.marquee-img {
+.marquee-imgfixdark {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
   height: 80px;
   width: auto;
-  gap: 90px;
+  margin: 0 18px;
+  padding: 12px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transform-style: preserve-3d;
+
 }
+
+.marquee-imgfixdark:hover {
+  transform: scale(1.15);
+  box-shadow: 0px 0px 18px rgba(255, 255, 255, 0.4);
+  transform: rotateY(15deg) rotateX(10deg) scale(1.18);
+  box-shadow: 0 12px 25px rgba(255, 255, 255, 0.25);
+  animation: bounce 0.4s ease;
+}
+
+/* Tooltip */
+.marquee-imgfixdark::after {
+  content: attr(data-label);
+  position: absolute;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+
+/* Show tooltip on hover */
+.marquee-imgfixdark:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%   { transform: translateY(0) rotateY(15deg) rotateX(10deg) scale(1.18); }
+  50%  { transform: translateY(-10px) rotateY(15deg) rotateX(10deg) scale(1.23); }
+  100% { transform: translateY(0) rotateY(15deg) rotateX(10deg) scale(1.18); }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* PROJECTS SECTION */
 #projects {
@@ -323,8 +384,18 @@ section {
   padding: 30px;
   width: 100%;
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 220px; 
   position: relative;
   transition: transform 0.3s;
+}
+.projects-section1 > div,
+.projects-section2 > div {
+  flex: 1 1 300px;
+  max-width: 400px;
 }
 
 .ireporter:hover,
@@ -417,6 +488,117 @@ section {
 .projects-button button:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+/* EXPERIENCE SECTION */
+#experience {
+  padding: 60px 20px;
+  margin-top: 40px;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+/* Container */
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Card */
+.experience-card {
+  background: linear-gradient(to bottom right, #141414, #1e1e1e);
+  border-radius: 15px;
+  padding: 25px 30px;
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 30px rgba(255,255,255,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 40px rgba(255,255,255,0.1);
+}
+
+/* Icon */
+.experience-icon {
+  background: rgba(255,255,255,0.08);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.experience-icon span {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Text */
+.experience-role {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.experience-company,
+.experience-location {
+  color: #bbbbbb;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Bullet list */
+.experience-list {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+.experience-list li {
+  color: #d4d4d4;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 0.95rem;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+#experience * {
+  background-color: transparent !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .experience-card {
+    max-width: 100%;
+  }
+}
+
+
+
 
 /* SERVICES SECTION */
 #services-section {
