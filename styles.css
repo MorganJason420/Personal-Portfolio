@@ -1,4 +1,24 @@
-*{
+SPACE GORETSK{
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+SORA   { 
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: black;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -6,879 +26,600 @@
   color: #fff;
 }
 /* NAVBAR START */
-.navbar{
-    position: absolute;
-    /* position: sticky; */
-    left: 270px;
-    top: -8px;
-    width: 75%;
-    height: 13%;
-    text-align: center;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
 }
-.navlinks{
-  border-radius: 8px;
-  border: 2px solid white;
-  background-color: transparent;
-  position: sticky;
-  width: 98%;
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
-ul{
+
+.navlinks {
+  display: flex;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  margin-left: 180px;
 }
-li{
-  float: left;
+
+.navlinks li {
+  margin-left: 30px;
 }
-li a{
-  display: block;
-  font-size: 1.4rem;
-  padding: 20px;
-  font-size: 1.3rem;
-  margin-left: 35px;
-  color: #fff;
+
+.navlinks a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
-/* NAVBAR END */
+
+.navlinks a:hover {
+  color: #aaa;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
 
 /* MAIN STYLES */
-#section1{
-  position: relative;
-  background-color: transparent;
-  min-height: 45vh;
-  width: 70%;
-  top: 10rem;
-  left: 17%;
+main {
+  padding-top: 70px;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#section1 {
   display: flex;
-
-}
-.header1{
-  width: 70%;
-  
-}
-.card1-container{
-  width: 65%;
-  height: 700px;
-}
-.para1{
-  width: 80%;
-  font-weight: 400;
-  font-size: 1.1rem;
-}
-.para2{
-  position: relative;
-  width: 60%;
-  bottom: 10px;
-  font-weight: 300;
-}
-
-.button1{
-  width: 35%;
-  top: 2px;
-  position: relative;
-  border: 1px solid whitesmoke;
-  border-radius: 6px;
-  padding: 6px 6px 6px 6px;
-  height: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
   justify-content: center;
 }
-.button-1{
-  width: 90px;
-  background-color: transparent;
-  font-weight: lighter;
+
+.header1 {
+  margin-bottom: 30px;
+}
+
+.para1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  position: relative;
- bottom: 16px;
- justify-content: center;
+  font-style: normal;
 }
-.card1-section1{
+
+.para2 {
+  font-size: 1.2rem;
+  color: #aaa;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card1-body h2{
+  font-size: 3.8rem;
+  margin-bottom: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.card1-footer p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #aaa;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card1-section1 {
   display: flex;
-  width: 60%;
-  position: relative;
-  left: 20px;
-  top: 23px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: center;
 }
-.card1-header{
-  display: flex;
-  width: 80%;
+
+.button1 {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 12px 25px;
+  text-decoration: none;
+  transition: all 0.3s;
 }
-.card1-body{
-  width: 80%;
-  font-size: 1.7rem;
+
+.button1:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.card1-footer p{
-  font-size: 1.4rem;
-  color: gray;
-  width: 90%;
-  margin-top: 60px;
+
+.button-1 {
+  background-color: transparent;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
- .fa {
-  padding: 6px 6px 6px 6px;
+
+.fa {
+  padding: 12px;
   font-size: 20px;
-  width: 35px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
-  border: thin solid white;
+  border: 1px solid white;
   border-radius: 6px;
-  height: 22px;
-
+  transition: all 0.3s;
 }
+
 .fa:hover {
-  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.fa-instagram {
-  color: white;
+
+.card2-container {
+  margin-top: 50px;
+  max-width: 400px;
+  margin: auto;
 }
-.fa-twitter {
-  color: white;
-}
-.card2-container{
+
+.bitmoji1 {
   position: relative;
-  width: 47%;
-  left: 100%;
-  bottom: 45%;
-}
-.card2-image{
-  position: relative;
-  bottom: 100px;
-  padding: 5px; 
   width: 100%;
-  justify-content: center;
-  border: 0.3px solid black;
   border-radius: 20px;
 }
-.bitmoji1{
-  border: 0.3px solid black;
-  height: auto;
-  border-radius: 20px;
 
-}
-.section3{
-  background-color: transparent;
+/* TECHNOLOGIES SECTION */
+#section3 {
+  padding: 50px 20px;
 }
 
-.card3-container{
-  width: 60%;
-  background-color: transparent;
-  height: 200px;
-}
-.marquee{
-  position: relative;
-}
-h3{
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  width: 20%;
-  position: relative;
-  left: 75%;
-}
-strong{
-  font-style: oblique;
-}
-.marquee1{
-  position: relative;
-  left: 650px;
-  width: 60%;
-  height: 300px;
-}
-.marquee1 img{
-  width: 20%;
-  height: auto;
-  gap: 300px;
-}
-.marquee-img{
-  height: 150px;
-  margin-left: 70px;
+.card3-container {
+  text-align: center;
 }
 
-.card4-container{
-  position: relative;
-  display: flex;
-  top: 120px;
-  padding: 5px; 
-  width: 100%;
-
-}
-#projects{
-  background-color: transparent;
-}
-.projects-bitmoji{
-  position: relative;
-  width: 25%;
-  border: 0.3px solid black;
-  border-radius: 20px;
-  left: 350px;
-}
-.bitmoji2{
-  position: relative;
-  border: 0.3px solid black;
-  height: auto;
-  border-radius: 20px;
-}
-.card5-container{
-  position: relative;
-  width: 40%;
-  left: 400px;
-  bottom: 25px;
-}
-.card5-header{
-  position: relative;
-  bottom: 50px;
-  width: 100%;
-}
-h4{
-  font-style: normal;
-  font-size: 3.4rem;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  width: 90%; 
-}
-strong{
+.marquee h3 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 500;
-  font-stretch: expanded;
+  font-style: normal;
 }
-.card5-body{
-  bottom: 75px;
 
+.marquee1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
-.card5-body p{
-  width: 80%;
-  bottom: 75px;
-  font-size: 1.4rem;
-  color: gray;
-  position: relative;
-  left: 5px;
+
+.marquee-img {
+  height: 80px;
+  width: auto;
+  gap: 90px;
 }
-#my-projects{
-  position: relative;
-  top: 150px;
+
+/* PROJECTS SECTION */
+#projects {
+  padding: 80px 20px;
 }
-.button5{
- width: 50%;
- background-color: transparent;
- font-weight: lighter;
- font-weight: 400;
- font-size: 18px;
- font-family: "Roboto", sans-serif;
- position: relative;
- bottom: 16px;
- left: 7px;
- justify-content: center;
+
+.card4-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
-.card5-footer{
-  position: relative;
-  width: 60%;
-  min-height: 30px;
-  bottom: 50px;
+
+.projects-bitmoji {
+  max-width: 400px;
 }
-.card6-container{
-  position: relative;
-  top: 80px;
+
+.bitmoji2 {
   width: 100%;
-  min-height: 200px;
-  gap: 120px;
+  border-radius: 20px;
 }
-.projects-images{
-  position: relative;
+
+.card5-container {
+  text-align: center;
+  max-width: 600px;
+}
+
+.card5-header h4 {
+  font-size: 3.0rem;
+  margin-bottom: 30px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  
+}
+
+.card5-body p {
+  color: #aaa;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.button5 {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.button5:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* MY PROJECTS SECTION */
+#my-projects {
+  padding: 80px 20px;
+}
+
+.card6-container {
+  text-align: center;
+}
+
+.projects-images {
+  margin-bottom: 50px;
+}
+
+.projects-section1,
+.projects-section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.ireporter,
+.primeride-connect,
+.letsconnect-img,
+.reliantcarriers-img {
+  background: linear-gradient(135deg, #1e0253, #c637a0);
+  border-radius: 20px;
+  padding: 30px;
   width: 100%;
-  min-height: 150px;
-  font-family: "Roboto", sans-serif;
+  max-width: 400px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.ireporter:hover,
+.primeride-connect:hover,
+.letsconnect-img:hover,
+.reliantcarriers-img:hover {
+  transform: translateY(-10px);
+}
+
+.primeride-connect {
+  background: linear-gradient(to right, #e9d362,#333333);
+}
+
+.letsconnect-img {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+.reliantcarriers-img {
+  background: linear-gradient(to right, #2C3E50, #FD746C);
+}
+
+.i-reporter,
+.primeride,
+.letsconnect,
+.reliantcarriers {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.ireporter-p1,
+.primeride-p1,
+.letsconnect-p1,
+.reliantcarriers-p1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  background: transparent;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ireporter-p2,
+.primeride-p2,
+.letsconnect-p2,
+.reliantcarriers-p2 {
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+  margin-bottom: 20px; 
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
-  gap: 120px;
 }
-.projects-section1{
-  position: relative;
-  display: flex;
-  width: 100%;
-  min-height: 200px;
-  gap: 100px;
- 
-}
-.ireporter{
-  position: relative;
-  left: 250px;
-  width: 35%;
-  height: auto;
-  min-height: 100px;
-  background-image: linear-gradient( 110.1deg,  rgba(30,2,83,1) 44.2%, rgba(198,55,160,1) 138.2% );
-  border: 0.3px solid black;
-  border-radius: 20px;
-}
-.ireporter-p1{
-  position: absolute;
-  top: 250px;
-  left: 50px;
-  font-size: 26px;
-  font-weight: 400;
-  background-color: black;
-}
-.ireporter-p2{
-  position: absolute;
-  top: 214px;
-  left: 50px;
-  background-color: black;
-  font-size: 1.1rem;
-  color: gray;
-  width: 48%;
-  opacity: 1.0;
-}
-.ireporter-link{
-  position: absolute;
-  top: 278px;
-  right: 340px;
-  background-color: black;
-}
-.i-reporter{
-  width: 85%;
-  min-height: 100px;
-  position: relative;
-  left: 48px;
-  top: 50px;
-  opacity: 0.8;
 
-}
-.primeride{
-  width: 85%;
-  min-height: 100px;
-  position: relative;
-  left: 48px;
-  top: 50px;
-  opacity: 0.8;
-  height: auto;
-
-}
-.primeride-connect{
-  position: relative;
-  left: 250px;
-  width: 35%;
-  min-height: 100px;
-  background: #fceabb;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border: 0.3px solid black;
-  border-radius: 20px;
-}
-.projects-section2{
-  position: relative;
-  top: 150px;
-  width: 100%;
-  min-height: 450px;
-}
-.primeride-p1{
+.ireporter-link,
+.primeride-link,
+.letsconnect-link,
+.reliantcarriers-link {
   position: absolute;
-  top: 251.8px;
-  left: 50px;
-  font-size: 26px;
-  font-weight: 400;
-  background-color: black;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+}
+
+.material-symbols-outlined {
+  background: transparent;
   color: white;
+  font-size: 2rem;
 }
-.primeride-p2{
-  position: relative;
-  left: 50px;
-  width: 48%;
-  color: grey;
-  font-size: 1.2rem;
-  bottom: 22px;
-  background-color: black;
-}
-.primeride-link{
-  position: relative;
-  top: 78px;
-  right: 185px;
-  background-color: black;
-}
-.letsconnect-img{
-  position: relative;
-  left: 570px;
-  width: 35%;
-  min-height: 360px;
-  background: #FF416C;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border: 0.3px solid black;
-  border-radius: 20px;
-}
-.letsconnect{
-  width: 85%;
-  min-height: 100px;
-  position: relative;
-  left: 48px;
-  top: 60px;
-  opacity: 0.8;
-  height: auto;
 
+.projects-button {
+  margin-top: 30px;
 }
-.letsconnect-p1{
-  position: absolute;
-  top: 275px;
-  left: 50px;
-  font-size: 26px;
-  font-weight: 400;
-  color: white;
-  background-color: black;
+
+.projects-button button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
-.letsconnect-p2{
-  position: relative;
-  top: 28px;
-  left: 50px;
-  background-color: black;
-  font-size: 1.2rem;
-  color: gray;
-  width: 48%;
-  opacity: 1.0;
+
+.projects-button button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.letsconnect-link{
-  position: relative;
-  top: 101px;
-  right: 246px;
-  background-color: black;
-  color: red;
+
+/* SERVICES SECTION */
+#services-section {
+  padding: 80px 20px;
 }
-.section4{
-  position: relative;
-  top: 400px;
+
+.section4 {
   display: flex;
-  width: 65%;
-  left: 410px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
-.section4-text{
-  display: block;
-  width: 38%;
+
+.section4-text {
+  text-align: center;
+  max-width: 600px;
 }
-h5{
-  font-size: 1.9rem;
-  font-family: "Roboto", sans-serif;
+
+.section4-text h5 {
+  margin-bottom: 20px;
+  font-size: 3.0rem;
+  margin-bottom: 30px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
-.sect4-web{
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  color: whitesmoke;
-}
-.section4 p{
-  font-size: 1.4rem;
-  color: gray;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif; 
-}
-.sect4{
+
+.sect4 {
   font-weight: 600;
   font-style: italic;
-  font-size: 2.7rem;
-  font-family: "Roboto", sans-serif;
+}
 
+.sect4-web {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
 }
-.button6{
-  width: 60%;
-  top: 2px;
-  position: relative;
-  padding: 6px 6px 6px 6px;
-  height: 20px;
-  justify-content: center;
-}
-.button-6{
-  width: 100%;
-  background-color: transparent;
-  font-weight: lighter;
+
+.section4-text p {
+  color: #aaa;
   font-size: 1.1rem;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  position: relative;
- bottom: 4px;
- justify-content: center;
-}
-.section4-bitmoji{
-  position: relative;
-  left: 120px;
-  width: 25%;
-  border: 0.3px solid black;
-  border-radius: 20px;
-}
-.bitmoji6{
-  position: relative;
-  left: 40px;
-  border: 0.3px solid black;
-  border-radius: 20px;
-  height: auto;
-}
-footer{
-  position: relative;
-  width: 25%;
-  top: 600px;
-  left: 650px;
-}
-.footerp1-span{
-  position: relative;
-  bottom: 8px;
-  font-size: 1.0rem;
-}
-.footer-p1{
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2.0rem;
-}
-.footer-p2{
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
 }
-/* MAIN STYLES */
 
+.button6 {
+  margin-top: 20px;
+}
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+.button-6 {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.button-6:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.section4-bitmoji {
+  max-width: 400px;
+}
+
+.bitmoji6 {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-p1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.footerp1-span {
+  font-size: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: norma
+}
+
+#datetime {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal
+}
+
+.footer-p2 {
+  color: #aaa;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .card4-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card5-container {
+    text-align: left;
+  }
+
+  .section4 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section4-text {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navlinks {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 80%;
+    height: calc(100vh - 70px);
+    background-color: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    transition: right 0.3s ease;
+  }
+
+  .navlinks.active {
+    right: 0;
+  }
+
+  .navlinks li {
+    margin: 20px 0;
+  }
+
+  .card1-body {
+    font-size: 2rem;
+  }
+
+  .card5-header h4 {
+    font-size: 2rem;
+  }
+
+  .section4-text h5 {
+    font-size: 2rem;
+  }
+}
 
 @media screen and (max-width: 480px) {
-  *{
-    max-width: 100%;
+  .card1-body {
+    font-size: 1.7rem;
   }
-  body, header, footer{
-    overflow-x: hidden;
+
+  .card5-header h4 {
+    font-size: 1.8rem;
   }
-  #section1{
-    position: relative;
-    display: block;
-    background-color: transparent;
-    width: 100%;
+
+  .section4-text h5 {
+    font-size: 1.7rem;
   }
-  .card1-container{
-    position: relative;
-    display: block;
-    width: 100%;
-    right: 70px;
-  }
-  .card1-header{
-    position: relative;
-    width: 98%;
-  }
-  .card1-section1{
-    position: relative;
-    right: 100px;
-    display: flex;
-    gap: 4px;
-    width: 45%;
-  }
-  .header1{
-    width: 50%;
-    position: relative;
-  }
-  .para1{
-    width: 100%;
-  }
-  .para2{
-    width: 100%
-  }
-  .button1{
-    position: relative;
-    width: 95%;
-    justify-content: center;
-  }
-  .button-1{
-    position: relative;
-    width: 87%;
-    font-size: 1.0rem;
-  }
-  .card2-container{
-    position: relative;
-    width: 100%;
-    display: block;
-  }
-  .card2-image{
-    position: relative;
-    display: block;
-  }
-  .bitmoji1{
-    position: relative;
-    display: block;
-    top: 470px;
-    right: 450px;
-    width: 85%;
-  }
-  #section3{
-    position: relative;
-    width: 100%;
-    top: 450px;
-    margin: 0;
-    min-height: 400px;
-  }
-  .card3-container{
-    position: relative;
-    top: 40px;
-    width: 90%;
-    min-height: 350px;
-    display: block;
-  }
-  .marquee{
-    position: relative;
-    width: 100%;
-    top: 50px;
-    margin: 0;
-    min-height: 50px;
-    background-color: transparent;
-  }
-  h3{
-    position: absolute;
-    width: 160px;
-    left: 150px;
-    margin: 0;
-    background-color: transparent;
-    min-height: 100px;
-    justify-content: center;
+
+  .sect4-web {
     font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-  } 
-  .marquee1{
-    position: absolute;
-    left: 70px;
-    height: 100px;
-    width: 90%;
-    margin: 0;
-    top: 40px;
-    background-color: transparent;
   }
-  #projects{
-    position: relative;
-    width: 100%;
-    display: block;
-    top: 300px;
-    margin: 0;
-  }
-  .card4-container{
-    position: relative;
-    width: 90%;
-    min-height: 300px;
-    display: block;
-    margin: 0;
-  }
-  .projects-bitmoji{
-    position: absolute;
-    left: 10px;
-    margin-bottom: 220px;
-    width: 80%;
-  }
-  .card5-container{
-    position: absolute;
-    left: 50px;
-    top: 400px;
-    display: block;
-    width: 100%;
-  }
-  .card5-footer{
-    position: relative;
-    width: 80%;
-  }
-  .button5{
-    position: absolute;
-    width: 60%;
-    left: 50px;
-  }
-  .bitmoji2{
-    position: relative;
-    margin-right: 1200px;
-  }
-  #my-projects{
-    position: relative;
-    top: 1100px;
-    min-height: 1500px;
-    width: 100%;
-  }
-  .card6-container{
-    position: relative;
-    width: 100%;
-    min-height: 1200px
-  }
-  .projects-images{
-    position: relative;
-    left: 0;
-    width: 97%;
-  }
-  .projects-section1{
-    position: absolute;
-    display: block;
-    width: 90%
-  }
-  .projects-section2{
-    position: relative;
-    top: 800px;
-    left: 0;
-  }
-  .ireporter{
-    position: absolute;
-    width: 100%;
-    min-height: 280px;
-    left: 30px;
-  }
-  .i-reporter{
-    position: relative;
-    width: 100%;
-    left: 0px;
-    bottom: 200px;
-    min-height: 250px
-  }
-  .ireporter-p1{
-    position: absolute;
-    left: 10px;
-    top: 220px;
-
-  }
-.ireporter-p2{
-  position: absolute;
-  left: 10px;
-  width: 100%;
-  top: 260px;
 }
-.ireporter-link{
-  position: absolute;
-  font-size: 10px;
-  width: 6%;
-  top: 250px;
-  left: 120px;
-}
-.primeride-connect{
-  position: absolute;
-  width: 100%;
-  min-height: 200px;
-  left: 30px;
-  top: 400px;
-}
-.primeride{
-  position: relative;
-  width: 100%;
-  left: 0px;
-  bottom: 200px;
-  min-height: 250px
-}
-.primeride-p1{
-  position: absolute;
-  left: 1px;
-  top: 222px;
-  color: white;
- 
-}
-.primeride-p2{
-  position: absolute;
-  left: 0;
-  top: 260px;
-  width: 50%;
-  color: gray;
-  width: 100%
-}
-.primeride-link{
-  position: absolute;
-  font-size: 10px;
-  width: 6%;
-  top: 255px;
-  left: 215px;
-}
-.projects-section2{
-  position: absolute;
-  display: block;
-  width: 100%;
-  min-height: 200px;
-}
-.letsconnect-img{
-  position: absolute;
-  width: 90%;
-  left: 30px;
-  min-height: 120px;
-}
-.letsconnect{
-  position: relative;
-  width: 100%;
-  left: 0px;
-  bottom: 250px;
-  min-height: 250px
-}
-.letsconnect-p1{
-  position: absolute;
-  left: 1px;
-  top: 212px;
-  width: 40%;
-  color: white;
- 
-}
-.letsconnect-p2{
-  position: absolute;
-  left: 0;
-  top: 250px;
-  width: 50%;
-  color: gray;
-  width: 100%
-}
-.letsconnect-link{
-  position: absolute;
-  font-size: 10px;
-  width: 6%;
-  top: 240px;
-  left: 160px;
-}
-#services-section{
-  position: relative;
-  left: 0;
-  top: 750px;
-}
-.section4{
-  position: relative;
-  width: 100%;
-  display: block;
-  min-height: 400px;
-  top: 100px;
-  left: 40px;
-}
-.section4-text{
-  position: relative;
-  width: 90%;
-  display: block;
-  left: 0px;
-}
-.sect4{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-.sect4-web{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: white;
-}
-
-.section4-bitmoji{
-  position: relative;
-  width: 100%;
-  left: 0;
-  top: 100px;
-}
-.bitmoji6{
-  position: relative;
-  left: 0
-}
-.footer-container{
-  position: relative;
-  width: 80%;
-  top: 1000px;
-  left: 60px;
-}
-
-};
-/* Small devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-
- };
-
-/* Medium devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) { 
-
- };
-
-/* Large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-
-};
