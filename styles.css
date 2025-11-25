@@ -684,10 +684,7 @@ section {
             height: 24px;
             transition: filter 0.3s ease;
         }
-/* 
-        .tech-item:hover .tech-icon img {
-            filter: brightness(0) invert(79%) sepia(59%) saturate(1554%) hue-rotate(358deg) brightness(105%) contrast(105%);
-        } */
+
 
         .tech-label {
             font-size: 0.7rem;
