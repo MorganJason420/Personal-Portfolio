@@ -1,20 +1,3 @@
-SPACE GORETSK{
-  font-family: "Space Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-SORA   { 
-  font-family: "Sora", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -119,7 +102,7 @@ section {
   font-style: normal;
 }
 
-.card1-body h2{
+.card1-body h2 {
   font-size: 3.8rem;
   margin-bottom: 20px;
   font-family: "Space Grotesk", sans-serif;
@@ -234,7 +217,6 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   transform-style: preserve-3d;
-
 }
 
 .marquee-imgfixdark:hover {
@@ -261,7 +243,6 @@ section {
   pointer-events: none;
 }
 
-
 /* Show tooltip on hover */
 .marquee-imgfixdark:hover::after {
   opacity: 1;
@@ -273,20 +254,16 @@ section {
 
 /* Bounce animation */
 @keyframes bounce {
-  0%   { transform: translateY(0) rotateY(15deg) rotateX(10deg) scale(1.18); }
-  50%  { transform: translateY(-10px) rotateY(15deg) rotateX(10deg) scale(1.23); }
-  100% { transform: translateY(0) rotateY(15deg) rotateX(10deg) scale(1.18); }
+  0% {
+    transform: translateY(0) rotateY(15deg) rotateX(10deg) scale(1.18);
+  }
+  50% {
+    transform: translateY(-10px) rotateY(15deg) rotateX(10deg) scale(1.23);
+  }
+  100% {
+    transform: translateY(0) rotateY(15deg) rotateX(10deg) scale(1.18);
+  }
 }
-
-
-
-
-
-
-
-
-
-
 
 /* PROJECTS SECTION */
 #projects {
@@ -315,13 +292,12 @@ section {
 }
 
 .card5-header h4 {
-  font-size: 3.0rem;
+  font-size: 3rem;
   margin-bottom: 30px;
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  
 }
 
 .card5-body p {
@@ -388,7 +364,7 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  min-height: 220px; 
+  min-height: 220px;
   position: relative;
   transition: transform 0.3s;
 }
@@ -406,14 +382,14 @@ section {
 }
 
 .primeride-connect {
-  background: linear-gradient(to right, #e9d362,#333333);
+  background: linear-gradient(to right, #e9d362, #333333);
 }
 
 .letsconnect-img {
   background: linear-gradient(to right, #ff4b2b, #ff416c);
 }
 .reliantcarriers-img {
-  background: linear-gradient(to right, #2C3E50, #FD746C);
+  background: linear-gradient(to right, #2c3e50, #fd746c);
 }
 
 .i-reporter,
@@ -444,7 +420,7 @@ section {
 .reliantcarriers-p2 {
   color: rgba(255, 255, 255, 0.7);
   background: transparent;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -490,224 +466,227 @@ section {
 }
 /* EXPERIENCE SECTION */
 
-        #experience {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+#experience {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-        .experience-title {
-            text-align: center;
-            font-size: 2.2rem;
-            font-family: "Space Grotesk", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 40px;
-        }
+.experience-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+}
 
-        /* Container */
-        .experience-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
+/* Container */
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
 
-        /* Card */
-        .experience-card {
-            background: linear-gradient(to bottom right, #141414, #1e1e1e);
-            border-radius: 15px;
-            padding: 25px 30px;
-            max-width: 450px;
-            width: 100%;
-            border: 1px solid rgba(255,255,255,0.08);
-            box-shadow: 0 0 30px rgba(255,255,255,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
+/* Card */
+.experience-card {
+  background: linear-gradient(to bottom right, #141414, #1e1e1e);
+  border-radius: 15px;
+  padding: 25px 30px;
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
 
-        .experience-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 0 40px rgba(255,255,255,0.1);
-        }
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+}
 
-        /* Icon */
-        .experience-icon {
-            background: rgba(255,255,255,0.08);
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 15px;
-            transition: all 0.3s ease;
-        }
+/* Icon */
+.experience-icon {
+  background: rgba(255, 255, 255, 0.08);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
 
-        .experience-card:hover .experience-icon {
-            background: rgba(255,195,0,0.2);
-            transform: scale(1.1);
-        }
+.experience-card:hover .experience-icon {
+  background: rgba(255, 195, 0, 0.2);
+  transform: scale(1.1);
+}
 
-        .experience-icon span {
-            font-size: 30px;
-            color: #fff;
-            transition: color 0.3s ease;
-        }
+.experience-icon span {
+  font-size: 30px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
 
-        .experience-card:hover .experience-icon span {
-            color: #ffc300;
-        }
+.experience-card:hover .experience-icon span {
+  color: #ffc300;
+}
 
-        /* Text */
-        .experience-role {
-            color: #fff;
-            font-size: 1.4rem;
-            margin-bottom: 8px;
-            font-family: "Space Grotesk", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            font-style: normal;
-            transition: color 0.3s ease;
-        }
+/* Text */
+.experience-role {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  transition: color 0.3s ease;
+}
 
-        .experience-card:hover .experience-role {
-            color: #ffc300;
-        }
+.experience-card:hover .experience-role {
+  color: #ffc300;
+}
 
-        .experience-company,
-        .experience-location {
-            color: #bbbbbb;
-            font-size: 0.95rem;
-            margin-bottom: 5px;
-            font-family: "Space Grotesk", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 500;
-            font-style: normal;
-        }
+.experience-company,
+.experience-location {
+  color: #bbbbbb;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
-        /* Bullet list */
-        .experience-list {
-            margin-top: 12px;
-            padding-left: 18px;
-            transition: all 0.3s ease;
-        }
+/* Bullet list */
+.experience-list {
+  margin-top: 12px;
+  padding-left: 18px;
+  transition: all 0.3s ease;
+}
 
-        .experience-card:hover .experience-list {
-            opacity: 0.7;
-            transform: translateY(5px);
-        }
+.experience-card:hover .experience-list {
+  opacity: 0.7;
+  transform: translateY(5px);
+}
 
-        .experience-list li {
-            color: #d4d4d4;
-            margin-bottom: 10px;
-            line-height: 1.4;
-            font-size: 0.95rem;
-            font-family: "Sora", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 300;
-            font-style: normal;
-        }
+.experience-list li {
+  color: #d4d4d4;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 0.95rem;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 
-        /* Technology overlay */
-        .tech-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom right, rgba(20, 20, 20, 0.95), rgba(30, 30, 30, 0.95));
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s ease;
-            padding: 20px;
-            text-align: center;
-        }
+/* Technology overlay */
+.tech-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(20, 20, 20, 0.95),
+    rgba(30, 30, 30, 0.95)
+  );
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  padding: 20px;
+  text-align: center;
+}
 
-        .experience-card:hover .tech-overlay {
-            opacity: 1;
-            visibility: visible;
-        }
+.experience-card:hover .tech-overlay {
+  opacity: 1;
+  visibility: visible;
+}
 
-        .tech-title {
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: #ffc300;
-        }
+.tech-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffc300;
+}
 
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            width: 100%;
-            max-width: 300px;
-        }
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+}
 
-        .tech-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            transition: transform 0.3s ease;
-        }
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease;
+}
 
-        .tech-item:hover {
-            transform: scale(1.1);
-        }
+.tech-item:hover {
+  transform: scale(1.1);
+}
 
-        .tech-icon {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.05);
-            transition: background 0.3s ease;
-        }
+.tech-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: background 0.3s ease;
+}
 
-        .tech-item:hover .tech-icon {
-            background: rgba(255, 195, 0, 0.2);
-        }
+.tech-item:hover .tech-icon {
+  background: rgba(255, 195, 0, 0.2);
+}
 
-        .tech-icon img {
-            width: 24px;
-            height: 24px;
-            transition: filter 0.3s ease;
-        }
+.tech-icon img {
+  width: 24px;
+  height: 24px;
+  transition: filter 0.3s ease;
+}
 
+.tech-label {
+  font-size: 0.7rem;
+  color: #d4d4d4;
+  text-align: center;
+  line-height: 1.2;
+}
 
-        .tech-label {
-            font-size: 0.7rem;
-            color: #d4d4d4;
-            text-align: center;
-            line-height: 1.2;
-        }
+#experience * {
+  background-color: transparent !important;
+}
 
-        #experience * {
-            background-color: transparent !important;
-        }
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .experience-card {
+    max-width: 100%;
+  }
 
-        /* Mobile responsiveness */
-        @media (max-width: 480px) {
-            .experience-card {
-                max-width: 100%;
-            }
-            
-            .tech-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
-            }
-        }
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
 
 /* SERVICES SECTION */
 #services-section {
@@ -728,7 +707,7 @@ section {
 
 .section4-text h5 {
   margin-bottom: 20px;
-  font-size: 3.0rem;
+  font-size: 3rem;
   margin-bottom: 30px;
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
@@ -816,7 +795,7 @@ footer {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  font-style: norma
+  font-style: norma;
 }
 
 #datetime {
@@ -825,7 +804,7 @@ footer {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  font-style: normal
+  font-style: normal;
 }
 
 .footer-p2 {
@@ -833,7 +812,7 @@ footer {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  font-style: normal
+  font-style: normal;
 }
 
 /* MEDIA QUERIES */
